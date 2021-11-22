@@ -1,0 +1,10 @@
+jupyterlab
+numpy
+sympy
+scipy
+matplotlib
+pandas
+ipympl
+ipywidgets
+numba
+ipynb

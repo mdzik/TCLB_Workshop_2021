@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+""" To recover the Python script to generate this SVG, delete the line above -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-105 -1035 1140 1140">
+ <title>herd immunity threshold vs r0</title>
+ <desc>Graph of herd immunity threshold (HIT) vs basic reproduction number (R0) with selected diseases by CMG Lee.</desc>
+ <style type="text/css">
+.main  { font-family:Helvetica,Arial,sans-serif; font-size:30px; text-anchor:middle;
+         fill:#000000; stroke:#000000; stroke-linejoin:round; }
+text   { stroke:none; cursor:default; }
+.grid  { stroke:#000000; stroke-opacity:0.2; }
+.hatch { stroke:#000000; stroke-opacity:0.2; stroke-width:3; fill:none; }
+.eg    { font-weight:bold; stroke-width:10; stroke-opacity:0.1; }
+ </style>
+ <defs>
+  <g id="egs" stroke="none">
+<!-- BEGIN_DYNAMIC_DEFS -->
+  <g class="eg">
+   <path d="M 60,0 V -166.70000000000002 H 0 V -500 H 100 V 0 Z" fill="#ffcccc" stroke="none"/>
+   <text transform="translate(97,-135) rotate(270)" opacity="0.75" x="0" y="0"><tspan>influenza</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 100,0 V -500 H 0 V -750 H 200 V 0 Z" fill="#66ffcc" stroke="none"/>
+   <text transform="translate(197,-135) rotate(270)" opacity="0.75" x="0" y="0"><tspan>SARS</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 250,0 V -800 H 0 V -857.1 H 350 V 0 Z" fill="#ccccff" stroke="none"/>
+   <text transform="translate(347,-135) rotate(270)" opacity="0.75" x="0" y="0"><tspan>polio</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 500,0 V -900 H 0 V -916.7 H 600 V 0 Z" fill="#ffff00" stroke="none"/>
+   <text transform="translate(597,-135) rotate(270)" opacity="0.75" x="0" y="0"><tspan>chickenpox</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 600,0 V -916.7 H 0 V -944.4000000000001 H 900 V 0 Z" fill="#ffccff" stroke="none"/>
+   <text transform="translate(897,-135) rotate(270)" opacity="0.75" x="0" y="0"><tspan>measles</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 119.5,0 V -581.6 H 0 V -709.3000000000001 H 172 V 0 Z" fill="url(#pattern_dots)" stroke="#000000"/>
+   <text transform="translate(4,-685)" text-anchor="start" x="0" y="0"><tspan>COVID-19</tspan><tspan x="0" dy="0.8em">ancestral</tspan><tspan x="0" dy="0.8em">strain</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 200,0 V -750 H 0 V -800 H 250 V 0 Z" fill="url(#pattern_slash)" stroke="#000000"/>
+   <text transform="translate(4,-776)" text-anchor="start" x="0" y="0"><tspan>COVID-19</tspan><tspan x="0" dy="0.8em">Alpha variant</tspan></text>
+  </g>
+  <g class="eg">
+   <path d="M 250,0 V -800 H 0 V -875 H 400 V 0 Z" fill="url(#pattern_backslash)" stroke="#000000"/>
+   <text transform="translate(4,-851)" text-anchor="start" x="0" y="0"><tspan>COVID-19</tspan><tspan x="0" dy="0.8em">Delta variant</tspan></text>
+  </g>
+<!--   END_DYNAMIC_DEFS -->
+  </g>
+  <pattern id="pattern_grid_1" patternUnits="userSpaceOnUse" width="10" height="10">
+   <rect class="grid" x="0" y="0" width="9999" height="9999" fill="none"/>
+  </pattern>
+  <pattern id="pattern_grid_5" patternUnits="userSpaceOnUse" width="50" height="50">
+   <rect class="grid" x="0" y="0" width="9999" height="9999" fill="url(#pattern_grid_1)"/>
+  </pattern>
+  <pattern id="pattern_dots" patternUnits="userSpaceOnUse" width="10" height="10">
+   <circle class="hatch" cx="5" cy="5" r="2"/>
+  </pattern>
+  <pattern id="pattern_slash" patternUnits="userSpaceOnUse" width="10" height="10">
+   <path class="hatch" d="M -5,10 l 15,-15 M 0,15 l 15,-15"/>
+  </pattern>
+  <pattern id="pattern_backslash" patternUnits="userSpaceOnUse" width="10" height="10">
+   <path class="hatch" d="M -5, 0 l 15, 15 M 0,-5 l 15, 15"/>
+  </pattern>
+  <circle id="point" cx="0" cy="0" r="5"/>
+  <text id="r0" x="0" y="0.6ex"><tspan font-style="italic">R</tspan><tspan dx="0.1ex" dy="0.3ex" font-size="80%">0</tspan></text>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g class="main">
+  <use xlink:href="#egs"/>
+  <rect x="0" y="-1000" width="1000" height="1000" fill="url(#pattern_grid_5)" stroke="#cccccc"/>
+  <path d="M 0,-1000 H 1030" stroke-dasharray="20,20"/>
+  <path d="M 0,0 H 1030 m -19,-11 l 19,11 l -19,11 M 0,110 V -1030 m -11,19 l 11,-19 l 11,19 M 67,-205 l 18,-60" fill="none"/>
+  <use  transform="translate(725,75)" xlink:href="#r0"/>
+  <text transform="translate(760,75)" x="0" y="0.6ex" text-anchor="end">Basic reproduction number ( &#160; &#160; )</text>
+  <text transform="translate(-85,-500) rotate(270)" x="0" y="0.6ex">Herd immunity threshold (HIT)</text>
+<!-- BEGIN_DYNAMIC_MAIN -->
+  <text transform="translate(12,25)" x="0" y="0.7ex" letter-spacing="-2">0</text>
+  <text transform="translate(62,25)" x="0" y="0.7ex" letter-spacing="-2">1</text>
+  <text transform="translate(100,25)" x="0" y="0.7ex" letter-spacing="-2">2</text>
+  <text transform="translate(150,25)" x="0" y="0.7ex" letter-spacing="-2">3</text>
+  <text transform="translate(200,25)" x="0" y="0.7ex" letter-spacing="-2">4</text>
+  <text transform="translate(250,25)" x="0" y="0.7ex" letter-spacing="-2">5</text>
+  <text transform="translate(300,25)" x="0" y="0.7ex" letter-spacing="-2">6</text>
+  <text transform="translate(350,25)" x="0" y="0.7ex" letter-spacing="-2">7</text>
+  <text transform="translate(400,25)" x="0" y="0.7ex" letter-spacing="-2">8</text>
+  <text transform="translate(450,25)" x="0" y="0.7ex" letter-spacing="-2">9</text>
+  <text transform="translate(500,25)" x="0" y="0.7ex" letter-spacing="-2">10</text>
+  <text transform="translate(550,25)" x="0" y="0.7ex" letter-spacing="-2">11</text>
+  <text transform="translate(600,25)" x="0" y="0.7ex" letter-spacing="-2">12</text>
+  <text transform="translate(650,25)" x="0" y="0.7ex" letter-spacing="-2">13</text>
+  <text transform="translate(700,25)" x="0" y="0.7ex" letter-spacing="-2">14</text>
+  <text transform="translate(750,25)" x="0" y="0.7ex" letter-spacing="-2">15</text>
+  <text transform="translate(800,25)" x="0" y="0.7ex" letter-spacing="-2">16</text>
+  <text transform="translate(850,25)" x="0" y="0.7ex" letter-spacing="-2">17</text>
+  <text transform="translate(900,25)" x="0" y="0.7ex" letter-spacing="-2">18</text>
+  <text transform="translate(950,25)" x="0" y="0.7ex" letter-spacing="-2">19</text>
+  <text transform="translate(1000,25)" x="0" y="0.7ex" letter-spacing="-2">20</text>
+  <text transform="translate(-35,0)" x="0" y="0.7ex">0.0</text>
+  <text transform="translate(-35,-100)" x="0" y="0.7ex">0.1</text>
+  <text transform="translate(-35,-200)" x="0" y="0.7ex">0.2</text>
+  <text transform="translate(-35,-300)" x="0" y="0.7ex">0.3</text>
+  <text transform="translate(-35,-400)" x="0" y="0.7ex">0.4</text>
+  <text transform="translate(-35,-500)" x="0" y="0.7ex">0.5</text>
+  <text transform="translate(-35,-600)" x="0" y="0.7ex">0.6</text>
+  <text transform="translate(-35,-700)" x="0" y="0.7ex">0.7</text>
+  <text transform="translate(-35,-800)" x="0" y="0.7ex">0.8</text>
+  <text transform="translate(-35,-900)" x="0" y="0.7ex">0.9</text>
+  <text transform="translate(-35,-1000)" x="0" y="0.7ex">1.0</text>
+  <g transform="translate(50.0,0)">
+   <use xlink:href="#point"/>
+   <g transform="translate(5, 5)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=1</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=0%</text>
+   </g>
+  </g>
+  <g transform="translate(62.5,-200)">
+   <use xlink:href="#point"/>
+   <g transform="translate(15, -60)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=1.25</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=20%</text>
+   </g>
+  </g>
+  <g transform="translate(80.0,-375)">
+   <use xlink:href="#point"/>
+   <g transform="translate(10, 10)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=1.6</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=37.5%</text>
+   </g>
+  </g>
+  <g transform="translate(100.0,-500)">
+   <use xlink:href="#point"/>
+   <g transform="translate(10, 37)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=2</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=50%</text>
+   </g>
+  </g>
+  <g transform="translate(125.0,-600)">
+   <use xlink:href="#point"/>
+   <g transform="translate(12, 38)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=2.5</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=60%</text>
+   </g>
+  </g>
+  <g transform="translate(200.0,-750)">
+   <use xlink:href="#point"/>
+   <g transform="translate(2, 72)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=4</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=75%</text>
+   </g>
+  </g>
+  <g transform="translate(250.0,-800)">
+   <use xlink:href="#point"/>
+   <g transform="translate(8, 59)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=5</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=80%</text>
+   </g>
+  </g>
+  <g transform="translate(400.0,-875)">
+   <use xlink:href="#point"/>
+   <g transform="translate(-45, 82)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=8</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=87.5%</text>
+   </g>
+  </g>
+  <g transform="translate(500.0,-900)">
+   <use xlink:href="#point"/>
+   <g transform="translate(-60, -9)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=10</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=90%</text>
+   </g>
+  </g>
+  <g transform="translate(625.0,-920)">
+   <use xlink:href="#point"/>
+   <g transform="translate(-20, 75)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=12.5</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=92%</text>
+   </g>
+  </g>
+  <g transform="translate(800.0,-937.5)">
+   <use xlink:href="#point"/>
+   <g transform="translate(-152, 3)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=16</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=93.75%</text>
+   </g>
+  </g>
+  <g transform="translate(1000.0,-950)">
+   <use xlink:href="#point"/>
+   <g transform="translate(-97, 75)" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">=20</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT=95%</text>
+   </g>
+  </g>
+  <path d="M45.0,111.1L50.0,0.0L55.0,-90.9L60.0,-166.7L65.0,-230.8L70.0,-285.7L75.0,-333.3L80.0,-375.0L85.0,-411.8L90.0,-444.4L95.0,-473.7L100.0,-500.0L105.0,-523.8L110.0,-545.5L115.0,-565.2L120.0,-583.3L125.0,-600.0L130.0,-615.4L135.0,-629.6L140.0,-642.9L145.0,-655.2L150.0,-666.7L155.0,-677.4L160.0,-687.5L165.0,-697.0L170.0,-705.9L175.0,-714.3L180.0,-722.2L185.0,-729.7L190.0,-736.8L195.0,-743.6L200.0,-750.0L205.0,-756.1L210.0,-761.9L215.0,-767.4L220.0,-772.7L225.0,-777.8L230.0,-782.6L235.0,-787.2L240.0,-791.7L245.0,-795.9L250.0,-800.0L255.0,-803.9L260.0,-807.7L265.0,-811.3L270.0,-814.8L275.0,-818.2L280.0,-821.4L285.0,-824.6L290.0,-827.6L295.0,-830.5L300.0,-833.3L305.0,-836.1L310.0,-838.7L315.0,-841.3L320.0,-843.7L325.0,-846.2L330.0,-848.5L335.0,-850.7L340.0,-852.9L345.0,-855.1L350.0,-857.1L355.0,-859.2L360.0,-861.1L365.0,-863.0L370.0,-864.9L375.0,-866.7L380.0,-868.4L385.0,-870.1L390.0,-871.8L395.0,-873.4L400.0,-875.0L405.0,-876.5L410.0,-878.0L415.0,-879.5L420.0,-881.0L425.0,-882.4L430.0,-883.7L435.0,-885.1L440.0,-886.4L445.0,-887.6L450.0,-888.9L455.0,-890.1L460.0,-891.3L465.0,-892.5L470.0,-893.6L475.0,-894.7L480.0,-895.8L485.0,-896.9L490.0,-898.0L495.0,-899.0L500.0,-900.0L505.0,-901.0L510.0,-902.0L515.0,-902.9L520.0,-903.8L525.0,-904.8L530.0,-905.7L535.0,-906.5L540.0,-907.4L545.0,-908.3L550.0,-909.1L555.0,-909.9L560.0,-910.7L565.0,-911.5L570.0,-912.3L575.0,-913.0L580.0,-913.8L585.0,-914.5L590.0,-915.3L595.0,-916.0L600.0,-916.7L605.0,-917.4L610.0,-918.0L615.0,-918.7L620.0,-919.4L625.0,-920.0L630.0,-920.6L635.0,-921.3L640.0,-921.9L645.0,-922.5L650.0,-923.1L655.0,-923.7L660.0,-924.2L665.0,-924.8L670.0,-925.4L675.0,-925.9L680.0,-926.5L685.0,-927.0L690.0,-927.5L695.0,-928.1L700.0,-928.6L705.0,-929.1L710.0,-929.6L715.0,-930.1L720.0,-930.6L725.0,-931.0L730.0,-931.5L735.0,-932.0L740.0,-932.4L745.0,-932.9L750.0,-933.3L755.0,-933.8L760.0,-934.2L765.0,-934.6L770.0,-935.1L775.0,-935.5L780.0,-935.9L785.0,-936.3L790.0,-936.7L795.0,-937.1L800.0,-937.5L805.0,-937.9L810.0,-938.3L815.0,-938.7L820.0,-939.0L825.0,-939.4L830.0,-939.8L835.0,-940.1L840.0,-940.5L845.0,-940.8L850.0,-941.2L855.0,-941.5L860.0,-941.9L865.0,-942.2L870.0,-942.5L875.0,-942.9L880.0,-943.2L885.0,-943.5L890.0,-943.8L895.0,-944.1L900.0,-944.4L905.0,-944.8L910.0,-945.1L915.0,-945.4L920.0,-945.7L925.0,-945.9L930.0,-946.2L935.0,-946.5L940.0,-946.8L945.0,-947.1L950.0,-947.4L955.0,-947.6L960.0,-947.9L965.0,-948.2L970.0,-948.5L975.0,-948.7L980.0,-949.0L985.0,-949.2L990.0,-949.5L995.0,-949.7L1000.0,-950.0L1005.0,-950.2L1010.0,-950.5L1015.0,-950.7L1020.0,-951.0L1025.0,-951.2L1030.0,-951.5" fill="none" stroke-width="4"/>
+<!--   END_DYNAMIC_MAIN -->
+ </g>
+</svg>
+<!-- Please retain this and other comments, which contain Python code to generate this SVG. """
+
+import re, math, fractions
+def fmt(string): ## string.format(**vars()) using tags {expression!format} by CMG Lee
+ def f(tag): i_sep = tag.rfind('!'); return (re.sub('\.0$', '', str(eval(tag[1:-1])))
+  if (i_sep < 0) else ('{:%s}' % tag[i_sep + 1:-1]).format(eval(tag[1:i_sep])))
+ return (re.sub(r'(?<!{){[^{}]+}', lambda m:f(m.group()), string)
+         .replace('{{', '{').replace('}}', '}'))
+def append(obj, string): return obj.append(fmt(string))
+def tabbify(cellss, separator='|'):
+ if isinstance(cellss, dict): return tabbify([[k] + v for (k, v) in cellss.items()])
+ cellpadss = [list(rows) + [''] * (len(max(cellss, key=len)) - len(rows)) for rows in cellss]
+ fmts = ['%%%ds' % (max([len(str(cell)) for cell in cols])) for cols in zip(*cellpadss)]
+ return '\n'.join([separator.join(fmts) % tuple(rows) for rows in cellpadss])
+def hex_rgb(colour): ## convert [#]RGB to #RRGGBB and [#]RRGGBB to #RRGGBB
+ if colour[:3] == 'url': return colour
+ return '#%s' % (colour if len(colour) > 4 else ''.join([c * 2 for c in colour])).lstrip('#')
+def roundm(x, multiple=1):
+ if   (isinstance(x, tuple)): return tuple(roundm(list(x), multiple))
+ elif (isinstance(x, list )): return [roundm(x_i, multiple) for x_i in x]
+ else: return int(math.floor(float(x) / multiple + 0.5)) * multiple
+
+def compute_hit(x): return 1 - 1.0 / x
+def plot_x(x):      return roundm(x *    50, 0.1)
+def plot_y(y):      return roundm(y * -1000, 0.1)
+
+r0s = {1:(5,5), 1.25:(15,-60), 1.6:(10,10), 2:(10,37), 2.5:(12,38), 4:(2,72),
+       5:(8,59), 8:(-45,82), 10:(-60,-9), 12.5:(-20,75), 16:(-152,3), 20:(-97,75)}
+egs = {
+ # 'Ebola'                    : (0, 1.44, 1.80, '#fc0'),
+ # 'mumps'                    : (0, 4   , 7   , '#99f'),
+ # 'rubella or diphtheria'    : (0, 6   , 7   , '#f00'),
+ # 'pertussis'                : (0,12   ,17   , '#000'),
+ 'influenza'                : (0, 1.2 , 2.0 , '#fcc'),
+ 'SARS'                     : (0, 2   , 4   , '#6fc'),
+ 'polio'                    : (0, 5   , 7   , '#ccf'),
+ 'chickenpox'               : (0,10   ,12   , '#ff0'),
+ 'measles'                  : (0,12   ,18   , '#fcf'),
+ 'COVID-19~ancestral~strain': (1, 2.39, 3.44, 'url(#pattern_dots)'),
+ 'COVID-19~Alpha variant'   : (1, 4   , 5   , 'url(#pattern_slash)'),
+ 'COVID-19~Delta variant'   : (1, 5   , 8   , 'url(#pattern_backslash)'),
+}
+
+(out_defs, out_mains) = ([], [])
+
+## Axes
+for i_x in range(20 + 1):
+ append(out_mains, '''\
+  <text transform="translate({i_x * 50 + (12 if i_x < 2 else 0)},25)" x="0" y="0.7ex" letter-spacing="-2">{i_x}</text>''')
+for i_y in range(10 + 1):
+ append(out_mains, '''\
+  <text transform="translate(-35,{i_y * -100})" x="0" y="0.7ex">{i_y * 0.1!.1f}</text>''')
+## Graph
+out_xys = []
+for i in range(18, 412 + 1):
+ x = i * 0.05
+ y = compute_hit(x)
+ # print(i,x,y)
+ out_xy = '%.1f,%.1f' % (plot_x(x), plot_y(y))
+ if i % 2 == 0: out_xys.append(out_xy)
+ if x in r0s: append(out_mains, '''\
+  <g transform="translate({out_xy})">
+   <use xlink:href="#point"/>
+   <g transform="translate{r0s[x]}" text-anchor="start">
+    <use xlink:href="#r0" transform="translate(0,-50)"/>
+    <text transform="translate(50,-50)" x="0" y="0.6ex">={x}</text>
+    <text transform="translate( 0,-20)" x="0" y="0.6ex">HIT={roundm(y * 100, 1e-2)}%</text>
+   </g>
+  </g>''')
+append(out_mains, '''\
+  <path d="M{'L'.join(out_xys)}" fill="none" stroke-width="4"/>''')
+## Examples
+for eg in egs:
+ print(egs[eg])
+ (mode, lo, hi, fill) = egs[eg]
+ (x_lo, y_lo) = (plot_x(lo), plot_y(compute_hit(lo)))
+ (x_hi, y_hi) = (plot_x(hi), plot_y(compute_hit(hi)))
+ stroke       = '#000000' if mode > 0 else 'none'
+ out_text     = ('transform="translate(4,%d)" text-anchor="start"' % (y_hi + 24) if mode > 0 else
+                 'transform="translate(%d,-135) rotate(270)" opacity="0.75"' % (x_hi - 3))
+ append(out_defs, '''\
+  <g class="eg">
+   <path d="M {x_lo},0 V {y_lo} H 0 V {y_hi} H {x_hi} V 0 Z" fill="{hex_rgb(fill)}" stroke="{stroke}"/>
+   <text {out_text} x="0" y="0"><tspan>{eg.replace('~', '</tspan><tspan x="0" dy="0.8em">')}</tspan></text>
+  </g>''')
+
+out_p = fmt('width="100%" height="100%" viewBox="-105 -1035 1140 1140"')
+
+## Compile everything into an .svg file
+myself   = open(__file__, 'r').read() ## the contents of this very file
+file_out = open(__file__[:__file__.rfind('.')] + '.svg', 'w') ## *.* -> *.svg
+try: ## use try/finally so that file is closed even if write fails
+ file_out.write('''<?xml version="1.0" encoding="utf-8"?><!%s%s
+%s%s%s\n%s%s\n%s%s''' % ('-', '-', ## because SVG comments cannot have 2 consecutive '-'s
+  myself[:myself.find('width',myself.find('<svg'))], ## assume width specified before height/viewBox
+  out_p, ## replace SVG width/height/viewBox with {out_p} & dynamic SVG blocks with {out*s} contents
+  myself[myself.find ('>',myself.find('<svg')):
+         myself.find ('\n',myself.find('BEGIN_'+'DYNAMIC_DEFS'))], '\n'.join(out_defs),
+  myself[myself.rfind('\n',0,myself.find('END_'+'DYNAMIC_DEFS')):
+         myself.find ('\n',myself.find('BEGIN_'+'DYNAMIC_MAIN'))], '\n'.join(out_mains),
+  myself[myself.rfind('\n',0,myself.find('END_'+'DYNAMIC_MAIN')):]))
+finally:
+ file_out.close()
+
+## SVG-Python near-polyglot framework version 3 by CMG Lee (March 2018) -->

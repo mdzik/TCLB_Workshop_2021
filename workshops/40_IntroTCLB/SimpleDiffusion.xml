@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<CLBConfig version="2.0" output="output/SimpleDiffusion/">
+	<Geometry nx="100" ny="100">
+
+		<None name="city">
+			<!-- <Sphere dx="40" dy="40" nx="150" ny="150"/> -->
+			<Box dx="35" nx="30"/>
+
+
+		</None>
+
+	</Geometry>
+	<Model>
+		<Param name="Diffusivity_PHI" value="0.1666"/>      
+		<Param name="Init_PHI" value="-0.5" />	
+        <Param name="Init_PHI" value="0.5" zone="city"/>	
+    </Model>
+
+	<HDF5/>
+    <Solve Iterations="200">
+	<HDF5 Iterations="10"/>
+	</Solve>
+    
+</CLBConfig>
