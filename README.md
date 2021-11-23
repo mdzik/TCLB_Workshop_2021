@@ -13,28 +13,9 @@ Furthermore, its mesoscopic formulation allows physics to be introduced at a low
 In this event, we will show the state-of-the-art application of the LBM to the diffusion-reaction problems.
 During the workshop, a system of equations describing the dynamics of the epidemic will be solved using LBM.
 
-<img src="../images/zaraza_0109.jpeg" alt="drawing" width="600"/>
-
-<style>
-.workshop_image {
-display: inline-block;
-width: 300px;
-/* max-width: 20%;
-max-height: 20%; */
-}
-</style>
-
 The generic model encapsulated in the TCLB environment can be compiled to solve different sets of advection-reaction-diffusion equations coupled with Navier-Stokes equations.
 Apart from forecasting the epidemic dynamics, the model can handle problems like phase change or rock dissolution.
 
-<div id="banner" style="overflow: hidden; display: inline-block;">
-    <div class="workshop_image">
-        <img src ="../images/c1.jpg">
-    </div>
-    <div class="workshop_image">
-        <img src ="../images/c8.jpg">
-    </div>
-</div>
 
 **Where:**
 Uniwersytet Wrocławski, pl. Maxa Borna 9, 50-204 Wrocław, sala 119 (1 piętro)/Online
@@ -59,9 +40,6 @@ The materials will be hosted online using the jupyter environment.
 **Course Delivery:**
 The workshops will be held in polish.
 The materials will be available online, in english.
-
-**Price:**
-Free.
 
 **Funded by:**
 Warsaw University of Technology, IDUB against COVID-19
@@ -101,3 +79,28 @@ ggruszczynski([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_lang
 | 16:00    | Dockerized examples, HDF5                                                         |
 | 17:00    | R binding, Python binding                                                         |
 | 18:00    | End of workshop                                                                   |
+
+
+## Run this as on BinderHub
+
+
+# TCLB_binder
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdzik/TCLB_Workshop_2021/HEAD)
+
+# Local run
+
+Image is designed to be binder-firendly. For local development i the same environment, see [Singularity and Docker](https://github.com/mdzik/TCLB_docker) images
+
+# Features
+
+1. Prebuild models and macros to use full featured TCLB from your browser
+2. Models included:
+ - d2q9_reaction_diffusion_system_SimpleDiffusion
+ - d2q9
+ - more comming
+3. Change ***tree*** to ***lab*** in url to get IDE like environment with Terminal access
+4. Libraries included
+ - TCLB dependincies: R, Python, HDF5
+ - Python HDF5 bindings. 
+ - Matplotlib, Pandas, Numpy, SciKit Image

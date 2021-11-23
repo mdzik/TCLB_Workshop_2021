@@ -1,0 +1,34 @@
+#!/bin/bash
+export LDFLAGS="-L/usr/lib/x86_64-linux-gnu/hdf5/openmpi/  $LDFLAGS" 
+export CPPFLAGS="-I /usr/include/hdf5/openmpi $CPPFLAGS"
+export LD_LIBRARY_PATH="/srv/conda/lib/:$LD_LIBRARY_PATH"
+
+export TCLBBUILDPATH=`cd ~/TCLB && pwd`
+TCLBTOOLS=`cd ~/TCLB_tools && pwd`
+export PYTHONPATH="$PYTHONPATH:$TCLBTOOLS/Python"
+
+
+function tclbmake {
+    MYPATH=$(pwd)
+    echo $MYPATH
+    cd $TCLBBUILDPATH
+    make $@
+    cd $MYPATH
+}
+
+
+function tclb() {
+	$TCLBBUILDPATH/CLB/$1/main $2
+}
+
+function tclbmpi() {
+	mpirun $TCLBBUILDPATH/CLB/$1/main $2
+}
+
+export -f tclb
+export -f tclbmpi
+export -f tclbmake
+
+cd ~/
+
+exec "$@"
