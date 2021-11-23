@@ -1,0 +1,8 @@
+[submodule "TCLB"]
+	path = TCLB
+	url = https://github.com/mdzik/TCLB.git
+	branch = d2q9_reaction_diffusion_configurable
+[submodule "TCLB_tools"]
+	path = TCLB_tools
+	url = https://github.com/mdzik/TCLB_tools.git
+	branch = master
