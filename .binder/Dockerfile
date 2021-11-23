@@ -1,5 +1,10 @@
 FROM mdzik/tclb_workspace:binder
 
+
+COPY --chown=${NB_UID} . ${HOME}
+
+RUN chown -R ${NB_UID} ${HOME}
+
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
